@@ -67,7 +67,7 @@ export default {
   */
   axios: {
   },
-  routerBase,
+  ...routerBase,
   /*
   ** Build configuration
   */
