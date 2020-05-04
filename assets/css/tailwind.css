@@ -1,0 +1,28 @@
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* purgecss end ignore */
+@import "tailwindcss/utilities";
+
+@responsive {
+  .yellow-background-xl {
+    background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
+    background-repeat: no-repeat;
+    background-size: 439px 60%;
+    background-position: 3% 64%;
+  }
+
+  .yellow-background-md {
+    background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
+    background-repeat: no-repeat;
+    background-size: 248px 80%;
+    background-position: 1% 65%;
+  }
+
+  .yellow-background-xs {
+    background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
+    background-repeat: no-repeat;
+    background-size: 367px 83%;
+    background-position: 1% 65%;
+  }
+}
