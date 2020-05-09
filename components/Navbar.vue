@@ -1,7 +1,7 @@
 <template>
   <nav class="flex flex-row justify-between text-white font-thin sm:py-10 py-10">
     <div>
-      <img src="../static/logo-fit-white.png" alt="Daniel Jonguitud Logo" width="100" height="100" />
+      <nuxt-link to="/"><img src="../static/logo-fit-white.png" alt="Daniel Jonguitud Logo" width="100" height="100" /></nuxt-link>
     </div>
     <div class="text-lg self-center hidden md:block">
       <nuxt-link class="mr-10 link" to="backend">Backend</nuxt-link>

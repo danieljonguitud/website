@@ -14,7 +14,7 @@ module.exports = {
       gray: '#cbd5e0'
     },
     fontFamily: {
-      'body': ['Futura PT'],
+      'body': ["'Futura PT'", 'sans-serif'],
     }
   },
   variants: {},
