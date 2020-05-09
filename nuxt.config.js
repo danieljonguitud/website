@@ -59,7 +59,8 @@ export default {
           icons: [['faTwitter'], ['faLinkedin']]
         }
       ]
-    }]
+    }],
+    
   ],
   /*
   ** Axios module configuration
