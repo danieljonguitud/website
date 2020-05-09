@@ -1,6 +1,8 @@
 /* purgecss start ignore */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@import "../../node_modules/vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+@import "../../node_modules/vue-slick-carousel/dist/vue-slick-carousel.css";
 /* purgecss end ignore */
 @import "tailwindcss/utilities";
 
@@ -25,9 +27,4 @@
     background-size: 367px 83%;
     background-position: 1% 65%;
   }
-}
-
-/* purgecss ignore */
-.fa-* {
-
 }

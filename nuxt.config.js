@@ -45,6 +45,11 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+
+  purgeCSS: {
+    content: ['./pages/**/*.vue', './layouts/**/*.vue', './components/**/*.vue'],
+    whitelistPatterns: [/-fa$/, /^fa-/],
+   },
   /*
   ** Nuxt.js modules
   */
