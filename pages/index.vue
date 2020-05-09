@@ -1,6 +1,6 @@
 <template>
   <div class="font-body bg-black flex flex-col min-h-screen">
-    <div class="container mx-auto sm:px-0 px-5 flex-grow">
+    <div class="container mx-auto xl:px-20 sm:px-0 px-5 flex-grow">
       <Navbar />
       <Hero />
       <Techstack />

@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:w-3/5 sm:pt-0 pt-10 px-6">
+  <div class="sm:w-3/5 sm:pt-0 pt-10 px-10">
     <VueSlickCarousel class="px-6" v-bind="settings">
       <div>
         <h3 class="text-right font-hairline">

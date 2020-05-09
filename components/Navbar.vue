@@ -11,7 +11,7 @@
       <a class="mr-10 text-xl" href="https://twitter.com/danojonguitud" target="_blank">
         <fa :icon="['fab', 'twitter']" />
       </a>
-      <a class="mr-10 text-xl" href="https://www.linkedin.com/in/danieljonguitud/" target="_blank">
+      <a class="mr-10 sm:mr-0 text-xl" href="https://www.linkedin.com/in/danieljonguitud/" target="_blank">
         <fa :icon="['fab', 'linkedin']" />
       </a>
     </div>
