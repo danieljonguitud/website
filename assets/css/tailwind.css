@@ -26,3 +26,8 @@
     background-position: 1% 65%;
   }
 }
+
+/* purgecss ignore */
+.fa-* {
+
+}
