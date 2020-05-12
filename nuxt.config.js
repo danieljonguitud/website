@@ -61,12 +61,23 @@ export default {
       imports: [
         {
           set: '@fortawesome/free-brands-svg-icons',
-          icons: [['faTwitter'], ['faLinkedin']]
-        }
+          icons: [['faGithub'], ['faLinkedin'], ['faWhatsapp']]
+        },
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: [['faEnvelope']]
+        },
       ]
     }],
-    
+    '@nuxtjs/recaptcha',
   ],
+  recaptcha: {
+    hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+    language: "en",   // Recaptcha language (v2)
+    siteKey: "6LdqZvUUAAAAAFwlj8_LVCgmECHsUbVtv5Iw6RXM",    // Site key for requests
+    version: 3,     // Version
+    size: "normal"        // Size: 'compact', 'normal', 'invisible' (v2)
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

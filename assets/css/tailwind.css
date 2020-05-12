@@ -27,6 +27,13 @@
     background-size: 367px 83%;
     background-position: 1% 65%;
   }
+
+  .yellow-background {
+    background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
+    background-repeat: no-repeat;
+    background-size: 206px 80%;
+    background-position: 1% 65%;
+  }
 }
 
 @font-face {
