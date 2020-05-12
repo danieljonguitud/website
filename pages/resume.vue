@@ -18,7 +18,7 @@
         </div>
         <div class="col">
           <h1>Daniel Jonguitud</h1>
-          <h2>Backend Developer</h2>
+          <h2>Fullstack Developer</h2>
           <ul>
             <li>Email: danieljonguitud20@gmail.com</li>
             <li>Address: 213 Gowan Ave, Toronto, Canada</li>
@@ -141,7 +141,6 @@
           <h3 class="border-bottom-gray">Programming Skills</h3>
           <h4>Backend</h4>
           <ul>
-            <li>Java</li>
             <li>Python</li>
             <li>PHP</li>
           </ul>

@@ -40,19 +40,19 @@
   font-family: 'Futura PT';
   font-style: light;
   font-weight: 300;
-  src: url(/website/assets/fonts/FuturaPTLight.woff) format("woff");
+  src: url(/assets/fonts/FuturaPTLight.woff) format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT';
   font-style: medium;
   font-weight: 500;
-  src: url(/website/assets/fonts/FuturaPTMedium.woff) format("woff");
+  src: url(/assets/fonts/FuturaPTMedium.woff) format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT';
   font-style: extrabold;
   font-weight: 800;
-  src: url(/website/assets/fonts/FuturaPTExtraBold.woff) format("woff");
+  src: url(/assets/fonts/FuturaPTExtraBold.woff) format("woff");
 }
