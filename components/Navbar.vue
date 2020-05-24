@@ -44,7 +44,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >Resume</a>
-        <a class="mr-4 text-2xl" href="https://twitter.com/danojonguitud" target="_blank">
+        <a class="mr-4 text-2xl" href="https://github.com/danieljonguitud" target="_blank">
           <fa
             class="hover:text-github transition-colors duration-150 ease-in-out"
             :icon="['fab', 'github']"

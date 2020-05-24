@@ -6,7 +6,7 @@
         <h2 class="hidden sm:flex font-medium text-3xl mr-10">My Stack</h2>
       </div>
       <div class="self-center">
-        <img class="sm:mx-10 sm:p-2 px-4" src="../static/python-logo.png" alt width="100" />
+        <img class="sm:mx-10 sm:p-2 px-4" src="../static/java-logo.png" alt width="100" />
       </div>
       <div class="self-center">
         <img class="sm:mx-10 sm:p-2 px-4" src="../static/vue-logo.png" alt width="100" />

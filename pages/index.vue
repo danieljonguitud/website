@@ -23,12 +23,12 @@ export default {
     Footer
   },
   head: {
-    title: "Daniel Jonguitud | Full-Stack Developer",
+    title: "Daniel Jonguitud | Web Developer",
     meta: [
       {
         hid: "description",
         name: "description",
-        content: "Home page description"
+        content: "Daniel is a Developer specialized on Web Tecnologies"
       }
     ]
   }

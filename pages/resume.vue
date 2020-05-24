@@ -18,7 +18,7 @@
         </div>
         <div class="col">
           <h1>Daniel Jonguitud</h1>
-          <h2>Fullstack Developer</h2>
+          <h2>Web Developer</h2>
           <ul>
             <li>Email: danieljonguitud20@gmail.com</li>
             <li>Address: 213 Gowan Ave, Toronto, Canada</li>
@@ -42,8 +42,7 @@
             have focused on providing business solutions to my employers to produce results in
             their sales and growth in general. I have the ability to work alone or in a team,
             always preferring collaborative work due to my interpersonal skills. My goal is to
-            achieve concrete results that at the same time show a balance in design and user
-            experience.
+            achieve concrete results that at the same time provide powerfull applications and microservices.
           </p>
         </div>
       </div>
@@ -67,8 +66,8 @@
                 <p>Connect International School | Toronto, Canada | August 2017 - May 2020</p>
                 <strong>Achievements:</strong>
                 <ul>
-                  <li>•	Developed from scratch a website that follows their brand guidelines.</li>
-                  <li>•	Created an SEO strategy that positioned their website in their specific keywords.</li>
+                  <li>•	Developed from scratch their business website.</li>
+                  <li>•	Developed a microservice that stores school prices from different competitors.</li>
                   <li>•	Structured their information architecture taking into account the scalability of the company.</li>
                 </ul>
               </li>
@@ -95,13 +94,12 @@
                 <div class="col">
                   <p>
                     The website was developed from scratch taking into account the possible expansion of
-                    the company. For that reason, WordPress was used since most of it makes use of static
+                    the company. For that reason, PHP was used since most of it makes use of static
                     elements that do not require more than a friendly and comfortable interface design.
                     A content delivery network was implemented because of the nature of the business, which
                     is an international English school, to ensure the fast load anywere in the world.
                   </p>
                   <strong>Technologies used:</strong>
-                  <span class="badge badge-secondary">WordPress</span>
                   <span class="badge badge-secondary">JavaScript</span>
                   <span class="badge badge-secondary">PHP</span>
                   <span class="badge badge-secondary">HTML</span>
@@ -121,13 +119,13 @@
                 </div>
                 <div class="col">
                   <p>
-                    WordPress and the Woocommerce plugin were used in conjunction with other tools to achieve
+                    Laravel was used in the creation of this ecommerce website, in conjunction with other tools to achieve
                     a watch store for Recorda. An elegant design that favored the brand's sales efforts was taken
                     into account. For the improvement of the performance, the images were compressed and the HTML,
                     JS and CSS were minified so that the users did not have problems when loading the elements.
                   </p>
                   <strong>Technologies used:</strong>
-                  <span class="badge badge-secondary">WordPress</span>
+                  <span class="badge badge-secondary">Laravel</span>
                   <span class="badge badge-secondary">JavaScript</span>
                   <span class="badge badge-secondary">PHP</span>
                   <span class="badge badge-secondary">HTML</span>
@@ -141,6 +139,7 @@
           <h3 class="border-bottom-gray">Programming Skills</h3>
           <h4>Backend</h4>
           <ul>
+            <li>Java</li>
             <li>Python</li>
             <li>PHP</li>
           </ul>
@@ -152,10 +151,9 @@
           </ul>
           <h4>Frameworks</h4>
           <ul>
+            <li>Spring</li>
             <li>Django</li>
-            <li>Django REST</li>
             <li>Laravel</li>
-            <li>WordPress</li>
             <li>Vue.js</li>
             <li>Tailwind CSS</li>
           </ul>

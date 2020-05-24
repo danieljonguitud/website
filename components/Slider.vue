@@ -6,7 +6,7 @@
           <a href="http://duny.co" target="_blank" rel="noopener noreferrer">
             <img class=" pb-4 translate z-50" src="../static/duny_example.png" />
           </a>
-          Duny | Vue (JS) + Django (Python)
+          Duny | Vue (JS) + Spring (Java)
         </h3>
       </div>
       <div class>
