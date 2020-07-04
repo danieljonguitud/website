@@ -1,12 +1,13 @@
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/website/'
-  }
-} : {}
+// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+//   router: {
+//     base: '/website/'
+//   }
+// } : {}
 
 export default {
   mode: 'universal',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -69,22 +70,14 @@ export default {
         },
       ]
     }],
-    '@nuxtjs/recaptcha',
   ],
-  recaptcha: {
-    hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
-    language: "en",   // Recaptcha language (v2)
-    siteKey: "6LdqZvUUAAAAAFwlj8_LVCgmECHsUbVtv5Iw6RXM",    // Site key for requests
-    version: 3,     // Version
-    size: "normal"        // Size: 'compact', 'normal', 'invisible' (v2)
-  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
   },
-  ...routerBase,
+  // ...routerBase,
   /*
   ** Build configuration
   */
