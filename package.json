@@ -10,10 +10,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "export": "nuxt export",
-    "static": "nuxt build && nuxt export",
+    "static": "nuxt build && nuxt export && npm run assets",
     "serve": "nuxt serve",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+    "assets": "mkdir -p ./dist/assets && cp -R ./assets/fonts ./dist/assets/fonts"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
