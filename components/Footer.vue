@@ -7,7 +7,7 @@
       target="_blank"
     >Nuxt</a> and
     <a class="text-yellow" href="http://tailwindcss.com" target="_blank">Tailwind CCS</a>.
-    Hosted on <a class="text-yellow" href="https://vercel.com/" target="_blank">Vercel/a>.
+    Hosted on <a class="text-yellow" href="https://vercel.com/" target="_blank">Vercel</a>.
   </footer>
 </template>
 
