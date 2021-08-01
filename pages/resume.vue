@@ -182,7 +182,7 @@
 </template>
 
 
-<style>
+<style scoped>
 #resume-header {
   margin-top: 20px;
   margin-bottom: 20px;

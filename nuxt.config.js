@@ -1,12 +1,4 @@
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-//   router: {
-//     base: '/website/'
-//   }
-// } : {}
-
 export default {
-  mode: 'universal',
   target: 'static',
   /*
   ** Headers of the page
@@ -19,7 +11,11 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap',
+      },
     ]
   },
   /*
@@ -45,12 +41,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode'
   ],
-
-  purgeCSS: {
-    content: ['./pages/**/*.vue', './layouts/**/*.vue', './components/**/*.vue'],
-    whitelistPatterns: [/-fa$/, /^fa-/],
-   },
   /*
   ** Nuxt.js modules
   */
@@ -66,7 +58,7 @@ export default {
         },
         {
           set: '@fortawesome/free-solid-svg-icons',
-          icons: [['faEnvelope']]
+          icons: [['faEnvelope'], ['faSun'], ['faMoon']]
         },
       ]
     }],
@@ -76,16 +68,21 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: 'https://wp.danieljonguitud.com/wp-json'
   },
-  // ...routerBase,
+
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '',
+    storageKey: 'nuxt-color-mode'
+  },
   /*
   ** Build configuration
   */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  }
+  build: {}
 }

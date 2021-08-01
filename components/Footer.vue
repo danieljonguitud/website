@@ -1,6 +1,6 @@
 <template>
-  <footer class="text-sm font-hairline p-1 text-center w-full bg-shadow text-gray">
-    2020 © Daniel Jonguitud. Website built with 
+  <footer class="text-[12px] font-thin p-1 text-center w-full dark:bg-shadow bg-gray dark:text-gray text-black">
+    {{ year }} © Daniel Jonguitud. Website built with
     <a
       class="text-yellow"
       href="http://nuxtjs.org"
@@ -10,6 +10,16 @@
     Hosted on <a class="text-yellow" href="https://vercel.com/" target="_blank">Vercel</a>.
   </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    }
+  }
+}
+</script>
 
 <style>
 </style>

@@ -1,26 +1,33 @@
 <template>
-  <div class="font-body bg-black flex flex-col min-h-screen">
-    <div class="container mx-auto xl:px-20 sm:px-0 px-5 flex-grow">
-      <Navbar />
+  <div>
       <Hero />
-      <Techstack />
-    </div>
-    <Footer />
+      <Blog :posts="posts" />
   </div>
 </template>
 
 <script>
 import Navbar from "../components/Navbar";
 import Hero from "~/components/Hero";
-import Techstack from "~/components/Techstack";
 import Footer from "~/components/Footer";
+import Blog from "~/components/Blog";
 
 export default {
   components: {
+    Blog,
     Navbar,
     Hero,
-    Techstack,
     Footer
+  },
+  async asyncData(ctx) {
+    const posts = await ctx.app.$axios.$get('/wp/v2/posts?per_page=4&_embed')
+    return {
+      posts
+    }
+  },
+  data() {
+    return {
+      posts: {}
+    }
   },
   head: {
     title: "Daniel Jonguitud | Web Developer",
@@ -31,7 +38,8 @@ export default {
         content: "Daniel is a Developer specialized on Web Tecnologies"
       }
     ]
-  }
+  },
+  layout: 'default'
 };
 </script>
 

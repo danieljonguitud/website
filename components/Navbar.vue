@@ -1,19 +1,28 @@
 <template>
   <div>
-    <nav class="flex flex-row justify-between text-white font-thin sm:py-10 py-10">
+    <nav class="flex flex-row justify-between text-black dark:text-white font-thin sm:py-10 py-10">
       <div>
         <nuxt-link to="/">
-          <img
-            src="../static/logo-fit-white.png"
-            alt="Daniel Jonguitud Logo"
-            width="100"
-            height="100"
-          />
+          <span class="text-[23px] font-semibold">Daniel Jonguitud</span>
         </nuxt-link>
       </div>
-      <div class="text-lg self-center hidden md:block">
+      <div class="text-[16px] self-center hidden md:block">
+        <nuxt-link class="mr-10 link" to="/blog" rel="noopener noreferrer">Blog</nuxt-link>
         <nuxt-link class="mr-10 link" to="resume" target="_blank" rel="noopener noreferrer">Resume</nuxt-link>
         <button class="mr-10 font-thin link" id="show-modal" @click="showModal = true">Contact</button>
+        <button
+          class="mr-10 text-xl"
+          @click.prevent="changeColors"
+        >
+          <fa v-if="this.$colorMode.value === 'light'"
+              class="hover:text-yellow transition-colors duration-150 ease-in-out"
+              :icon="['fas', 'moon']"
+          />
+          <fa v-if="this.$colorMode.value === 'dark'"
+              class="hover:text-yellow transition-colors duration-150 ease-in-out"
+              :icon="['fas', 'sun']"
+          />
+        </button>
         <a
           class="mr-10 text-xl"
           href="https://github.com/danieljonguitud"
@@ -39,7 +48,7 @@
       </div>
       <div class="md:hidden">
         <a
-          class="mr-4 link text-xl"
+          class="mr-4 link text-[18px]"
           href="http://danieljonguitud.com/resume"
           target="_blank"
           rel="noopener noreferrer"
@@ -70,9 +79,20 @@ export default {
   },
   data() {
     return {
-      showModal: false
+      showModal: false,
+      colors: ['system', 'light', 'dark']
     };
   },
+  methods: {
+    changeColors() {
+      console.log(this.$colorMode.value)
+      if (this.$colorMode.value === 'dark') {
+        this.$colorMode.preference = 'light'
+      } else {
+        this.$colorMode.preference = 'dark'
+      }
+    }
+  }
 };
 </script>
 <style>
