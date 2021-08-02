@@ -8,7 +8,7 @@
       </div>
       <div class="text-[16px] self-center hidden md:block">
         <nuxt-link class="mr-10 link" to="/blog" rel="noopener noreferrer">Blog</nuxt-link>
-        <nuxt-link class="mr-10 link" to="resume" target="_blank" rel="noopener noreferrer">Resume</nuxt-link>
+        <nuxt-link class="mr-10 link" to="/resume" target="_blank" rel="noopener noreferrer">Resume</nuxt-link>
         <button class="mr-10 font-thin link" id="show-modal" @click="showModal = true">Contact</button>
         <button
           class="mr-10 text-xl"

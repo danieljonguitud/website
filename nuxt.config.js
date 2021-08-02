@@ -84,5 +84,5 @@ export default {
   /*
   ** Build configuration
   */
-  build: {}
+  build: {},
 }
