@@ -1,9 +1,9 @@
 <template>
   <div>
-    <nav class="flex flex-row justify-between text-black dark:text-white font-thin sm:py-10 py-10">
+    <nav class="flex flex-row justify-between text-black dark:text-white font-thin sm:py-10 py-10 items-center">
       <div>
         <nuxt-link to="/">
-          <span class="text-[23px] font-semibold">Daniel Jonguitud</span>
+          <span class="md:text-[23px] text-xl font-semibold">Daniel Jonguitud</span>
         </nuxt-link>
       </div>
       <div class="text-[16px] self-center hidden md:block">

@@ -6,15 +6,7 @@
           <a href="http://duny.co" target="_blank" rel="noopener noreferrer">
             <img class=" pb-4 translate z-50" src="../static/duny_example.png" />
           </a>
-          Duny | Vue (JS) + Spring (Java)
-        </h3>
-      </div>
-      <div class>
-        <h3 class="text-right font-hairline">
-          <a href="http://mafbeauty.com" target="_blank" rel="noopener noreferrer">
-            <img class="translate pb-4 lg:px-24 px-8" src="../static/mafbeauty-example.png" />
-          </a>
-          Mafbeauty | WordPress
+          Duny | Vue (JS) + Laravel (PHP)
         </h3>
       </div>
     </VueSlickCarousel>

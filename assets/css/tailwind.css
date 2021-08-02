@@ -13,21 +13,21 @@
   .yellow-background-md {
     background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
     background-repeat: no-repeat;
-    background-size: 368px 64%;
+    background-size: 250px 95%;
     background-position: 1% 65%;
   }
 
   .yellow-background-xs {
     background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
     background-repeat: no-repeat;
-    background-size: 20px 83%;
+    background-size: 10px 50%;
     background-position: 1% 65%;
   }
 
   .yellow-background {
     background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
     background-repeat: no-repeat;
-    background-size: 305px 80%;
+    background-size: 330px 80%;
     background-position: 1% 65%;
   }
 }
