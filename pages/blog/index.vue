@@ -7,8 +7,8 @@
           <nuxt-link :to="`/blog/${post.slug}`">
             <div>
               <h2 class="mt-5 text-[20px] font-bold">{{ post.title.rendered }}</h2>
-              <p v-html="post.excerpt.rendered" class="my-3 text-[16px] font-thin">
-              </p>
+              <div v-html="post.excerpt.rendered" class="my-3 text-[16px] font-thin">
+              </div>
             </div>
           </nuxt-link>
         </div>

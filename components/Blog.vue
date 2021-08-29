@@ -7,7 +7,7 @@
           <div>
             <div class="h-20 bg-cover bg-center" :style="{ backgroundImage: 'url(' + post._embedded['wp:featuredmedia'][0].source_url + ')'}"></div>
             <h3 class="mt-5 text-[20px] font-bold">{{ post.title.rendered }}</h3>
-            <p v-html="post.excerpt.rendered" class="my-3 text-[16px] font-thin"></p>
+            <div v-html="post.excerpt.rendered" class="my-3 text-[16px] font-thin"></div>
             <p class="font-black text-[11px] uppercase">
               Read more
             </p>
