@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <h1 class="text-[41px] font-extrabold mb-10">{{post[0].title.rendered}}</h1>
-    <div class="h-32 bg-cover bg-center" :style="{ backgroundImage: 'url(' + post[0]._embedded['wp:featuredmedia'][0].source_url + ')'}"></div>
+  <div class="2xl:mx-52 mx-0">
+    <h1 class="md:text-[54px] text-[48px] font-extrabold mb-10">{{post[0].title.rendered}}</h1>
+    <div class="h-80 bg-cover bg-center" :style="{ backgroundImage: 'url(' + post[0]._embedded['wp:featuredmedia'][0].source_url + ')'}"></div>
     <div class="text-right my-10">
       <span class="text-[16px]">{{ getDate(post[0].date) }}</span>
     </div>
-    <div>
-      <p v-html="post[0].content.rendered" class="leading-8">
-      </p>
-    </div>
+      <div v-html="post[0].content.rendered" class="content leading-8 font-thin text-lg">
+      </div>
   </div>
 </template>
 
@@ -36,6 +34,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+.content p {
+  padding-bottom: 20px;
+}
 </style>
