@@ -5,8 +5,8 @@
         class="tracking-tight sm:text-4xl text-3xl lg:text-[41px] leading text-black font-extrabold xl:yellow-background-xl md:yellow-background-md yellow-background-xs yellow-background"
       >{{ title }}</h1>
       <p
-        class="pt-10 sm:text-2xl text-2xl lg:text-[28px] font-thin"
-      >{{ description }}</p>
+        class="pt-10 sm:text-lg text-lg lg:text-[24px] font-thin sm:leading-loose"
+      >I help businesses to build their ideas and succeed. Currently working with <a class="text-yellow underline" href="https://swooncreative.ca/" target="_blank">Swoon</a>.</p>
       <TechStack />
     </div>
     <Slider />
@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       title: "I'm a web developer",
-      description: "I help businesses to build their ideas and succeed"
+      description: "I help businesses to build their ideas and succeed. Currently working with Swoon S"
     }
   },
 };
