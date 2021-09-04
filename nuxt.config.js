@@ -8,7 +8,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'I\'m an Engineer specialized in Web Technologies. My passion about web have enabled me with to know great solutions for business. I\'m a strong believer that everything is possible as long as we use the correct tools.' }
+      { hid: 'description', name: 'description', content: 'I\'m an Engineer specialized in Web Technologies. My passion about web have enabled me with to know great solutions for business. I\'m a strong believer that everything is possible as long as we use the correct tools.' },
+      { hid: 'og:image', name: 'og:image', content: 'https://images.unsplash.com/photo-1548588627-f978862b85e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
