@@ -3,10 +3,10 @@
     <VueSlickCarousel class="px-6" v-bind="settings">
       <div>
         <h3 class="text-right font-hairline">
-          <a href="http://duny.co" target="_blank" rel="noopener noreferrer">
-            <img class=" pb-4 translate z-50" src="../static/duny_example.png" />
+          <a href="https://remenu.co" target="_blank" rel="noopener noreferrer">
+            <img class=" pb-4 translate z-50" src="../static/remenu_example.png" alt="Remenu Screenshots"/>
           </a>
-          Duny | Vue (JS) + Laravel (PHP)
+          Remenu | Nuxt (Vue.js) + Laravel (PHP)
         </h3>
       </div>
     </VueSlickCarousel>
