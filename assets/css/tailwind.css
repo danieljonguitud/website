@@ -6,14 +6,14 @@
   .yellow-background-xl {
     background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
     background-repeat: no-repeat;
-    background-size: 460px 90%;
-    background-position: 3% 64%;
+    background-size: 400px 90%;
+    background-position: 1% 13%;
   }
 
   .yellow-background-md {
     background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
     background-repeat: no-repeat;
-    background-size: 250px 95%;
+    background-size: 405px 95%;
     background-position: 1% 65%;
   }
 
@@ -27,7 +27,7 @@
   .yellow-background {
     background-image: linear-gradient(120deg, #ffeba1 0%, #ffeba1 100%);
     background-repeat: no-repeat;
-    background-size: 330px 80%;
+    background-size: 295px 80%;
     background-position: 1% 65%;
   }
 }

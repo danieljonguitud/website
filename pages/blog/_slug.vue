@@ -5,7 +5,7 @@
     <div class="text-right my-10">
       <span class="text-[16px]">{{ getDate(post[0].date) }}</span>
     </div>
-      <div v-html="post[0].content.rendered" class="content leading-8 font-thin text-lg">
+      <div v-html="post[0].content.rendered" class="content font-thin text-[21px]">
       </div>
   </div>
 </template>

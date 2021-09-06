@@ -22,7 +22,7 @@ module.exports = {
       reddark: "#7d2216",
     },
     fontFamily: {
-      body: ["'Spartan'", "sans-serif"]
+      body: ["'Helvetica'", "'Open Sans'", "sans-serif"]
     },
     fill: theme => ({
       yellow: theme("colors.yellow"),
