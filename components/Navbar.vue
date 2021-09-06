@@ -47,12 +47,10 @@
         </a>
       </div>
       <div class="md:hidden">
-        <a
+        <nuxt-link
           class="mr-4 link text-[18px]"
-          href="http://danieljonguitud.com/resume"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Resume</a>
+          to="/blog"
+        >Blog</nuxt-link>
         <a class="mr-4 text-2xl" href="https://github.com/danieljonguitud" target="_blank">
           <fa
             class="hover:text-github transition-colors duration-150 ease-in-out"

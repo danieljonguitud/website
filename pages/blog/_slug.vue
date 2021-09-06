@@ -7,6 +7,21 @@
     </div>
       <div v-html="post[0].content.rendered" class="content font-thin text-[21px]">
       </div>
+    <div class="flex justify-center text-center mt-20">
+      <span class="text-2xl font-bold pr-10">Follow me</span>
+      <a class="text-2xl pr-10" href="https://twitter.com/danojonguitud" target="_blank">
+        <fa
+          class="hover:text-yellow transition-colors duration-150 ease-in-out"
+          :icon="['fab', 'twitter']"
+        />
+      </a>
+      <a class="text-2xl" href="https://instagram.com/danojonguitud" target="_blank">
+        <fa
+          class="hover:text-yellow transition-colors duration-150 ease-in-out"
+          :icon="['fab', 'instagram']"
+        />
+      </a>
+    </div>
   </div>
 </template>
 

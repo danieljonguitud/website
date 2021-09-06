@@ -60,7 +60,7 @@ export default {
       imports: [
         {
           set: '@fortawesome/free-brands-svg-icons',
-          icons: [['faGithub'], ['faLinkedin'], ['faWhatsapp']]
+          icons: [['faGithub'], ['faLinkedin'], ['faWhatsapp'], ['faTwitter'], ['faInstagram']]
         },
         {
           set: '@fortawesome/free-solid-svg-icons',
