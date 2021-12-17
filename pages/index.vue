@@ -18,8 +18,15 @@ export default {
     Hero,
     Footer
   },
-  async asyncData(ctx) {
-    const posts = await ctx.app.$axios.$get('/wp/v2/posts?per_page=4&_embed')
+  async asyncData({ app }) {
+    const res = await app.$storyapi.get('cdn/stories', {
+      starts_with: 'posts/',
+    })
+
+    const posts = res.data.stories.map((story) => {
+      story.content.date = new Date(story.content.date)
+      return story
+    })
     return {
       posts
     }
@@ -28,16 +35,6 @@ export default {
     return {
       posts: {}
     }
-  },
-  head: {
-    title: "Daniel Jonguitud | Web Developer",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content: "Daniel is a Developer specialized on Web Tecnologies"
-      }
-    ]
   },
   layout: 'default'
 };
