@@ -1,11 +1,11 @@
 <template>
   <div class="2xl:mx-52 mx-0">
-    <h1 class="md:text-[54px] text-[48px] font-extrabold mb-10">{{post[0].title.rendered}}</h1>
-    <div class="h-80 bg-cover bg-center" :style="{ backgroundImage: 'url(' + post[0]._embedded['wp:featuredmedia'][0].source_url + ')'}"></div>
+    <h1 class="md:text-[54px] text-[48px] font-extrabold mb-10">{{post.content.title}}</h1>
+    <div class="h-80 bg-cover bg-center" :style="{ backgroundImage: 'url(' + 'https://' + post.content.image + ')'}"></div>
     <div class="text-right my-10">
-      <span class="text-[16px]">{{ getDate(post[0].date) }}</span>
+      <span class="text-[16px]">{{ getDate(post.content.date) }}</span>
     </div>
-      <div v-html="post[0].content.rendered" class="content font-thin text-[21px]">
+      <div v-html="getRichText(post.content.long_text)" class="content font-thin text-[21px]">
       </div>
     <div class="flex justify-center text-center mt-20">
       <span class="text-2xl font-bold pr-10">Follow me</span>
@@ -26,20 +26,27 @@
 </template>
 
 <script>
+import { createSEOMeta } from "~/utils/seo";
+
 export default {
-  async asyncData(ctx) {
-    const slug = ctx.params.slug
-    const post = await ctx.app.$axios.$get(`/wp/v2/posts?slug=${slug}&_embed`)
-    const seo = post[0].yoast_head_json
+  async asyncData({ app, route }) {
+    // Get the slug from the route
+    const slug = route.params.slug
+
+    const res = await app.$storyapi.get('cdn/stories', {
+      starts_with: 'posts/',
+      by_slugs: '*/' + slug,
+    })
+
+    const post = res.data.stories[0]
+
     return {
       post,
-      seo
     }
   },
   data() {
     return {
       post: [],
-      seo: [],
     }
   },
   methods: {
@@ -47,24 +54,17 @@ export default {
       const months = ['January','February','March','April','May','June','July','August','September','October','November','December']
       const dateFormatted = new Date(date)
       return `${months[dateFormatted.getMonth()]} ${dateFormatted.getDate()}, ${dateFormatted.getFullYear()}`
+    },
+    getRichText(text) {
+      return this.$storyapi.richTextResolver.render(text)
     }
   },
   head() {
+    const { title, description } = this.post.content
+    const image = 'https://' + this.post.content.image
     return {
-      title: this.seo.title,
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: this.seo.og_description },
-        { hid: 'og:image', name: 'og:image', content: this.seo.og_image[0].url}
-      ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap',
-        },
-      ]
+      title: `${title} | Daniel Jonguitud`,
+      meta: createSEOMeta({ description, image }),
     }
   },
 }
