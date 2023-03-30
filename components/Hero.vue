@@ -6,7 +6,7 @@
       >{{ title }}</h1>
       <p
         class="pt-10 sm:text-lg text-lg lg:text-[24px] font-thin sm:leading-loose"
-      >I help businesses to build their ideas and succeed. Currently working with <a class="text-yellow underline" href="https://swooncreative.ca/" target="_blank">Swoon</a>.</p>
+      >I help businesses to build their ideas and succeed. Currently working at <a class="text-yellow underline" href="https://canadadrives.ca/" target="_blank">Canada Drives</a>.</p>
       <TechStack />
     </div>
     <Slider />

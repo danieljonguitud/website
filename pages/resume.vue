@@ -11,7 +11,6 @@
       <div id="resume-header" class="row">
         <div class="col-3">
           <img
-            id="profile-picture"
             src="https://i.imgur.com/TQgRKeq.png"
             alt="Daniel's profile picture"
           />
@@ -181,6 +180,11 @@
   </div>
 </template>
 
+<script>
+export default {
+  layout: 'no-layout'
+}
+</script>
 
 <style scoped>
 #resume-header {
